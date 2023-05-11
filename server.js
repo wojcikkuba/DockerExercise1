@@ -1,6 +1,6 @@
 const http = require('http');
 
-const PORT = 8080; // 
+const PORT = 8080; // Set port
 const AUTHOR = "Jakub Wojcik";
 
 // Request handler
