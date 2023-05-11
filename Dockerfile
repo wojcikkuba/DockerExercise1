@@ -7,9 +7,6 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 
-# Build app
-RUN npm run build
-
 # Stage 2
 FROM node:14.17.0-alpine
 
@@ -18,10 +15,11 @@ ENV NODE_ENV=production
 EXPOSE 8080
 HEALTHCHECK CMD curl --fail http://localhost:8080/ || exit 1
 
+RUN apk --no-cache add curl
+
 # Copy files from first stage
 WORKDIR /app
-COPY --from=builder /app/dist ./dist
-COPY package*.json ./
+COPY --from=builder /app ./
 
 # Install modules
 RUN npm install --only=production
