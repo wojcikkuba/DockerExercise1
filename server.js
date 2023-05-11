@@ -17,6 +17,3 @@ const server = http.createServer(handler);
 server.listen(PORT, () => {
 	console.log(`Serwer dziala na porcie ${PORT} | ${new Date()} | ${AUTHOR}`);
 });
-
-
-
