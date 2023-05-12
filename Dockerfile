@@ -1,5 +1,5 @@
 # Stage 1
-FROM node:14.17.0-alpine AS builder
+FROM node:20.1-alpine3.16 AS builder
 
 # Copy files to container
 WORKDIR /app
@@ -8,7 +8,7 @@ RUN npm install
 COPY . .
 
 # Stage 2
-FROM node:14.17.0-alpine
+FROM node:20.1-alpine3.16
 
 # Update and install curl
 RUN apk update && apk --no-cache add curl
