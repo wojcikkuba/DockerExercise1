@@ -19,4 +19,4 @@ Następnie <pre><code>docker logs <CONTAINER ID></code></pre><br>
 <br><br>
 
 <h4>Raport Docker Scout:</h4>
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/198045764@N02/52891687530/in/dateposted-public/" title="vulner"><img src="https://live.staticflickr.com/65535/52891687530_4388b99c84_w.jpg" width="400" height="84" alt="vulner"/></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/198045764@N02/52891772499/in/dateposted-public/" title="vulner"><img src="https://live.staticflickr.com/65535/52891772499_b811662c99.jpg" width="500" height="104" alt="vulner"/></a>
