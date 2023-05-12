@@ -4,7 +4,8 @@ FROM node:20.1-alpine3.16 AS builder
 # Copy files to container
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN --mount=type=cache,target=/root/.npm \ 
+	npm install
 COPY . .
 
 # Stage 2
@@ -18,7 +19,8 @@ WORKDIR /app
 COPY --from=builder /app ./
 
 # Install modules
-RUN npm install --only=production
+RUN --mount=type=cache,target=/root/.npm \
+	npm install --only=production
 
 # Environment settings
 EXPOSE 8080
