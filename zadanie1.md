@@ -1,9 +1,9 @@
 <h4>Budowanie obrazu kontenera:</h4>
-<pre><code>docker build -t zadanie1:v1</code></pre>
+<pre><code>docker build -t wojcikkuba/zadanie1:v2</code></pre>
 
 
 <h4>Uruchomienie:</h4>
-<pre><code>docker run -d -p 8080:8080 zadanie1:v1</code></pre>
+<pre><code>docker run -d -p 8080:8080 wojcikkuba/zadanie1:v2</code></pre>
 
 <h4>Logi:</h4>
 pobranie CONTAINER ID z polecenia <pre><code>docker ps</code></pre> <br>
@@ -12,7 +12,7 @@ Następnie <pre><code>docker logs <CONTAINER ID></code></pre><br>
 <br><br>
 
 <h4>Warstwy:</h4>
-<pre><code>docker history zadanie1:v1</code></pre>
+<pre><code>docker history wojcikkuba/zadanie1:v2</code></pre>
 
 <h4>Działanie w przeglądarce:</h4><br>
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/198045764@N02/52890671803/in/dateposted-public/" title="przegladarka"><img src="https://live.staticflickr.com/65535/52890671803_a8f4d272c6_w.jpg" width="380" height="182" alt="przegladarka"/></a>
