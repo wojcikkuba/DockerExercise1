@@ -1,5 +1,5 @@
 <h4>Budowanie obrazu kontenera:</h4>
-<pre><code>docker build -t wojcikkuba/zadanie1:v2</code></pre>
+<pre><code>docker build -t wojcikkuba/zadanie1:v2 .</code></pre>
 
 
 <h4>Uruchomienie:</h4>
